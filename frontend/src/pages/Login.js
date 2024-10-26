@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = `https://fitnesstracker-2.onrender.com`;
+const API_URL = `https://fitnesstracker-6.onrender.com`;
 
 const Login = () => {
     const [email, setEmail] = useState("");
