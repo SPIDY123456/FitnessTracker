@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FiEdit, FiLogOut } from 'react-icons/fi';
 
-const API_URL = 'http://localhost:4000';
+const API_URL = 'https://fitnesstracker-2.onrender.com';
 
 const Profile = () => {
     const [user, setUser] = useState(null);
