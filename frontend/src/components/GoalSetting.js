@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getUserGoals } from '../api/goalapi';
 
-const API_URL = `http://localhost:4000`;
+const API_URL = `https://fitnesstracker-2.onrender.com`;
 
 const GoalSetting = () => {
     const [goal, setGoal] = useState('');
