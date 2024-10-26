@@ -18,7 +18,7 @@ const EditProfile = () => {
             }
 
             try {
-                const response = await axios.get(`http://localhost:4000/api/users/profile`, {
+                const response = await axios.get(`https://fitnesstracker-2.onrender.com/api/users/profile`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -52,7 +52,7 @@ const EditProfile = () => {
 
         try {
             const response = await axios.put(
-                `http://localhost:4000/api/users/update/${id}`,
+                `https://fitnesstracker-2.onrender.com/api/users/update/${id}`,
                 {
                     name: user.name,
                     gender: user.gender,
@@ -97,7 +97,7 @@ const EditProfile = () => {
                 />
             </div>
 
-            {/* New Gender Input */}
+    
             <div className="text-center mt-8">
                 <label className='block text-white mb-4'>Gender</label>
                 <select
@@ -112,7 +112,7 @@ const EditProfile = () => {
                 </select>
             </div>
 
-            {/* New Birthday Input */}
+
             <div className="text-center mt-8">
                 <label className='block text-white mb-4'>Birthday</label>
                 <input
@@ -123,7 +123,7 @@ const EditProfile = () => {
                 />
             </div>
 
-            {/* New Height Input */}
+           
             <div className="text-center mt-8">
                 <label className='block text-white mb-4'>Height (cm)</label>
                 <input
@@ -134,7 +134,7 @@ const EditProfile = () => {
                 />
             </div>
 
-            {/* New Weight Input */}
+          
             <div className="text-center mt-8">
                 <label className='block text-white mb-4'>Weight (kg)</label>
                 <input
