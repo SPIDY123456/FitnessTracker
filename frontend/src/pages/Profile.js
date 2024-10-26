@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FiEdit, FiLogOut } from 'react-icons/fi';
 
-const API_URL = 'https://fitnesstracker-2.onrender.com';
+const API_URL = 'https://fitnesstracker-6.onrender.com';
 
 const Profile = () => {
     const [user, setUser] = useState(null);
@@ -46,7 +46,7 @@ const Profile = () => {
     }
 
     const handleEditProfile = () => {
-        navigate('/edit-profile'); // Navigate to the edit profile page
+        navigate('/edit-profile'); 
     };
 
     const handleSignOut = () => {
