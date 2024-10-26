@@ -23,7 +23,8 @@ const Login = () => {
             alert('Login Successfull');
             navigate("/dashboard");
         } catch (error) {
-            console.error("Error log in",error);
+            console.error("Error log in", error.response ? error.response.data : error);
+
         }
     }
 
