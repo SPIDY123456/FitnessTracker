@@ -18,7 +18,7 @@ const EditProfile = () => {
             }
 
             try {
-                const response = await axios.get(`https://fitnesstracker-2.onrender.com/api/users/profile`, {
+                const response = await axios.get(`https://fitnesstracker-6.onrender.com/api/users/profile`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -52,7 +52,7 @@ const EditProfile = () => {
 
         try {
             const response = await axios.put(
-                `https://fitnesstracker-2.onrender.com/api/users/update/${id}`,
+                `https://fitnesstracker-6.onrender.com/api/users/update/${id}`,
                 {
                     name: user.name,
                     gender: user.gender,
