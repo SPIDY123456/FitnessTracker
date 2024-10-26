@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = `https://fitnesstracker-6.onrender.com`;
+const API_URL = `https://fitnesstracker-6.onrender.com/api/goal`;
 
 const getToken = () => localStorage.getItem('token');
 
